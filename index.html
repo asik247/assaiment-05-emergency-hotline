@@ -21,10 +21,12 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="border-2 border-red-500">
+  <body>
     <nav>
       <div class="navMain md:flex justify-between items-center p-4">
-        <div class="md:flex items-center justify-center gap-4 max-md:text-center">
+        <div
+          class="md:flex items-center justify-center gap-4 max-md:text-center"
+        >
           <img class="w-[50px] block mx-auto" src="./assets/logo.png" alt="" />
           <h2 class="font-bold text-[#006747] md:text-[20px] text-[16px]">
             Emergency<br />Service
@@ -40,6 +42,7 @@
           </p>
 
           <p
+            id="coinBtn"
             class="flex items-center justify-center gap-4 max-md:mb-5 w-[40%] mx-auto bg-gray-100 rounded-xl py-3 px-4"
           >
             <span>100</span
@@ -75,350 +78,369 @@
       </div>
     </header>
     <main class="bg-gray-200 py-5">
-     
-      <div class="mainDiv md:max-w-11/12 mx-auto  md:grid grid-cols-12 gap-6">
+      <div class="mainDiv md:max-w-11/12 mx-auto md:grid grid-cols-12 gap-6">
         <!-- card main  -->
-        <div class="cardMain col-span-9 md:grid grid-cols-3 gap-4 w-full">
-            <!-- cart no : 1 -->
+        <div
+          id="cardMainBox"
+          class="cardMain col-span-9 md:grid grid-cols-3 gap-4 w-full"
+        >
+          <!-- cart no : 1 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-red-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/emergency.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-red-200 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/emergency.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">জাতীয় জরুরি সেবা</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">National Emergency</h3>
-                <h4><span class="text-[25px] font-bold">999</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              সার্বজনীন
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <div>
+              <h2 class="font-bold text-[20px]">জাতীয় জরুরি সেবা</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">
+                National Emergency Service
+              </h3>
+              <h4><span class="text-[25px] font-bold">999</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                সার্বজনীন
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-            <!-- card no : 2 -->
+          <!-- card no : 2 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-sky-100 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/police.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-sky-100 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/police.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">পুলিশ</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Police</h3>
-                <h4><span class="text-[25px] font-bold">999</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              পুলিশ
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <div>
+              <h2 class="font-bold text-[20px]">পুলিশ</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">Police</h3>
+              <h4><span class="text-[25px] font-bold">999</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                পুলিশ
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-            <!-- card no : 3 -->
+          <!-- card no : 3 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-red-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/fire-service.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-red-200 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/fire-service.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">ফায়ার সার্ভিস</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Fire Service</h3>
-                <h4><span class="text-[25px] font-bold">999</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-             ফায়ার
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
-          </div>
-            <!-- card no : 4 -->
-          <div class="card bg-white p-6 rounded-2xl max-md:mb-4">        
-            <!-- title 1 -->
-            <div class="flex justify-between items-center my-4">
-                <div class="bg-red-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/ambulance.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+            <div>
+              <h2 class="font-bold text-[20px]">ফায়ার সার্ভিস</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">Fire Service</h3>
+              <h4><span class="text-[25px] font-bold">999</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                ফায়ার
+              </button>
             </div>
-            <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">অ্যাম্বুলেন্স</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Ambulance</h3>
-                <h4><span class="text-[25px] font-bold">1994-999999</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              স্বাস্থ্য
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-            <!-- card no : 5 -->
+          <!-- card no : 4 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-red-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/emergency.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-red-200 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/ambulance.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">নারী ও শিশু সহায়তা</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Women & Child Helpline</h3>
-                <h4><span class="text-[25px] font-bold">109</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              সহায়তা             
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <div>
+              <h2 class="font-bold text-[20px]">অ্যাম্বুলেন্স</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">Ambulance</h3>
+              <h4><span class="text-[25px] font-bold">1994-999999</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                স্বাস্থ্য
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-            <!-- card no : 6 -->
+          <!-- card no : 5 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-red-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/emergency.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-red-200 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/emergency.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">দুদক</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Anti-Corruption</h3>
-                <h4><span class="text-[25px] font-bold">106</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              সরকারি
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <div>
+              <h2 class="font-bold text-[20px]">নারী ও শিশু সহায়তা</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">
+                Women & Child Helpline
+              </h3>
+              <h4><span class="text-[25px] font-bold">109</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                সহায়তা
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-            <!-- card no : 7 -->
+          <!-- card no : 6 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-red-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/emergency.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-red-200 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/emergency.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">বিদ্যুৎ বিভ্রাট</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Electricity Outage</h3>
-                <h4><span class="text-[25px] font-bold">16216</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              বিদ্যুৎ
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <div>
+              <h2 class="font-bold text-[20px]">দুদক</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">Anti-Corruption</h3>
+              <h4><span class="text-[25px] font-bold">106</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                সরকারি
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-            <!-- card no : 8 -->
+          <!-- card no : 7 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-pink-300 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/brac.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-red-200 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/emergency.png" alt="" />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">ব্র্যাক</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Brac</h3>
-                <h4><span class="text-[25px] font-bold">16445</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              এনজিও
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
+            <div>
+              <h2 class="font-bold text-[20px]">বিদ্যুৎ বিভ্রাট</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">
+                Electricity Outage
+              </h3>
+              <h4><span class="text-[25px] font-bold">16216</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                বিদ্যুৎ
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+          <!-- card no : 8 -->
+          <div class="card bg-white p-6 rounded-2xl max-md:mb-4">
+            <!-- title 1 -->
+            <div class="flex justify-between items-center my-4">
+              <div class="bg-pink-300 p-3 rounded-2xl">
+                <img class="w-[40px]" src="./assets/brac.png" alt="" />
               </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
+            </div>
+            <!-- second title -->
+            <div>
+              <h2 class="font-bold text-[20px]">ব্র্যাক</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">Brac</h3>
+              <h4><span class="text-[25px] font-bold">16445</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                এনজিও
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
           <!-- card no : 9 -->
           <div class="card bg-white p-6 rounded-2xl max-md:mb-6">
             <!-- title 1 -->
             <div class="flex justify-between items-center my-4">
-                <div class="bg-gray-200 p-3 rounded-2xl">
-                       <img class="w-[40px] " src="./assets/Bangladesh-Railway.png" alt="">
-                </div>
-                <p class=""><i class="fa-regular fa-heart text-[30px] text-gray-400"></i></p>
+              <div class="bg-gray-200 p-3 rounded-2xl">
+                <img
+                  class="w-[40px]"
+                  src="./assets/Bangladesh-Railway.png"
+                  alt=""
+                />
+              </div>
+              <p class="">
+                <i class="fa-regular fa-heart text-[30px] text-gray-400"></i>
+              </p>
             </div>
             <!-- second title -->
-             <div>
-                <h2 class="font-bold text-[20px]">বাংলাদেশ রেলওয়ে</h2>
-                <h3 class="text-gray-500 font-semibold mb-4">Bangladesh Railway</h3>
-                <h4><span class="text-[25px] font-bold">163</span></h4>
-                 <button
-              class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500 "
-            >
-              পরিবহন
-            </button>
-
-             </div>
-             <!-- third title btn -->
-              <div class="flex gap-4 justify-between items-center">
-                
-                 <button
-              class="btn btn-active bg-white text-gray-500 rounded-md w-[50%] "
-            >
-             <i class="fa-solid fa-copy"></i> Copy
-            </button>
-             <button
-              class="btn btn-active bg-[#00A63E] rounded-md w-[50%] text-white "
-            >
-             <i class="fa-solid fa-phone"></i> Call
-            </button>
-              </div>
+            <div>
+              <h2 class="font-bold text-[20px]">বাংলাদেশ রেলওয়ে</h2>
+              <h3 class="text-gray-500 font-semibold mb-4">
+                Bangladesh Railway
+              </h3>
+              <h4><span class="text-[25px] font-bold">163</span></h4>
+              <button
+                class="btn btn-active bg-gray-200 rounded-2xl py-5 px-5 mb-4 text-gray-500"
+              >
+                পরিবহন
+              </button>
+            </div>
+            <!-- third title btn -->
+            <div class="flex gap-4 justify-between items-center">
+              <button
+                class="btn btn-active bg-white text-gray-500 rounded-md w-[50%]"
+              >
+                <i class="fa-solid fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-active cardBtn bg-[#00A63E] rounded-md w-[50%] text-white"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
           </div>
-          
         </div>
-        <!-- Right site card --> 
-        <div class="col-span-3 md:flex justify-between  bg-white  p-6 ">
-          <div>
-            <h3 class="font-bold text-[18px]"><i class="fa-solid fa-clock text-gray-400 text-[20px] mb-4 "></i> Call History</h3>
+        <!-- Right site card -->
+        <div class="col-span-3 bg-white">
+          <div class="md:flex justify-between p-6">
+            <div>
+              <h3 class="font-bold text-[18px]">
+                <i class="fa-solid fa-clock text-gray-400 text-[20px] mb-4"></i>
+                Call History
+              </h3>
+            </div>
+            <div>
+              <button
+                id="clearBtn"
+                class="btn btn-active bg-[#00A63E] rounded-2xl py-4 px-5 text-white"
+              >
+                clear
+              </button>
+            </div>
           </div>
-          <div>
-            <button
-              class="btn btn-active bg-[#00A63E] rounded-2xl py-4 px-5 text-white "
-            >
-              clear
-            </button>
-            <!-- container -->
-             <div class="container"></div>
-          </div>
+          <!-- container -->
+          <div id="container"></div>
         </div>
       </div>
     </main>
