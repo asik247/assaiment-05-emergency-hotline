@@ -1,14 +1,11 @@
-// reuse able function
-
+// Reuse able function
 function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
-
 // card main box code..
 getElement("cardMainBox").addEventListener("click", function (e) {
   // console.log(e.target);
-
   //condition for hert icon increment...
   if (e.target.className.includes("hertIcon")) {
     const icon = e.target;
@@ -19,13 +16,26 @@ getElement("cardMainBox").addEventListener("click", function (e) {
     navHertIconConvart = navHertIconConvart + 1;
     navHertIcon.innerText = navHertIconConvart;
   }
+  // condition for copy btn..
+  if (e.target.className.includes("copyBtn")) {
+    const copy = e.target;
+    // console.log(copy)
+    const copyNavBtn = getElement("copyNav");
+    let copyNavBtnConvart = parseInt(copyNavBtn.innerText);
+    copyNavBtnConvart = copyNavBtnConvart + 1;
+    copyNavBtn.innerText = copyNavBtnConvart;
+    // console.log(copyNavBtnConvart);
+    const hotLine =
+      copy.parentNode.parentNode.children[1].children[2].innerText;
+    // console.log(hotLine)
+    navigator.clipboard.writeText(hotLine);
+    alert("নম্বর কপি হয়েছে: " + hotLine);
+  }
   // main condition
   if (e.target.className.includes("cardBtn")) {
     const cartBtn = e.target;
-
     // const hertIcon = cartBtn.parentNode.parentNode.children[0].children[1].children[0];
     // console.log(hertIcon);
-
     const title =
       cartBtn.parentNode.parentNode.children[1].children[0].innerText;
 
@@ -34,14 +44,12 @@ getElement("cardMainBox").addEventListener("click", function (e) {
 
     const hotLine =
       cartBtn.parentNode.parentNode.children[1].children[2].innerText;
-
+    // console.log(hotLine)
     // coin decrese...............code
-
     const coinElement = getElement("coinBtn");
     let coinBtnConvart = parseInt(coinElement.innerText);
     // console.log(coinBtnConvart)
     // condition..
-
     if (coinBtnConvart < 20) {
       alert("❌ আপনার পর্যাপ্ত কয়েন নেই কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
       return;
@@ -53,7 +61,7 @@ getElement("cardMainBox").addEventListener("click", function (e) {
     // aleart...
     alert("📞 " + "Calling " + subTitle + " " + hotLine + "...");
 
-    //   Container
+    //Container
     const container = getElement("container");
     const newDiv = document.createElement("div");
     newDiv.innerHTML = `
@@ -75,18 +83,12 @@ getElement("cardMainBox").addEventListener("click", function (e) {
 
     // Time element select
     const setTime = newDiv.querySelector("#time");
-
     const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-
-    setTime.innerText = `${hours}:${minutes}:${seconds}`;
+    const time = now.toLocaleTimeString();
+    setTime.innerText = time;
   }
 });
-
 // Clear Btn code..
-
 const clearAll = getElement("clearBtn").addEventListener("click", function () {
   getElement("container").innerHTML = "";
 });
