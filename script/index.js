@@ -1,21 +1,30 @@
-// re use able function
+// reuse able function
 
 function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
-// set time
-// const timeEl = newDiv.querySelector('.time');
-// setInterval(() => {
-//   timeEl.innerText = new Date().toLocaleTimeString();
-// }, 1000);
 
 // card main box code..
 getElement("cardMainBox").addEventListener("click", function (e) {
   // console.log(e.target);
 
+  //condition for hert icon increment...
+  if (e.target.className.includes("hertIcon")) {
+    const icon = e.target;
+    // console.log(icon)
+    const navHertIcon = getElement("heartBtn");
+    let navHertIconConvart = parseInt(navHertIcon.innerText);
+    // console.log(navHertIconConvart);
+    navHertIconConvart = navHertIconConvart + 1;
+    navHertIcon.innerText = navHertIconConvart;
+  }
+  // main condition
   if (e.target.className.includes("cardBtn")) {
     const cartBtn = e.target;
+
+    // const hertIcon = cartBtn.parentNode.parentNode.children[0].children[1].children[0];
+    // console.log(hertIcon);
 
     const title =
       cartBtn.parentNode.parentNode.children[1].children[0].innerText;
@@ -26,12 +35,23 @@ getElement("cardMainBox").addEventListener("click", function (e) {
     const hotLine =
       cartBtn.parentNode.parentNode.children[1].children[2].innerText;
 
+    // coin decrese...............code
+
+    const coinElement = getElement("coinBtn");
+    let coinBtnConvart = parseInt(coinElement.innerText);
+    // console.log(coinBtnConvart)
+    // condition..
+
+    if (coinBtnConvart < 20) {
+      alert("❌ আপনার পর্যাপ্ত কয়েন নেই কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
+      return;
+    } else {
+      coinBtnConvart = coinBtnConvart - 20;
+      coinBtn.innerText = coinBtnConvart;
+    }
+
     // aleart...
     alert("📞 " + "Calling " + subTitle + " " + hotLine + "...");
-
-    // Coin btn code..
-    const coinBtn = getElement("coinBtn");
-    console.log(coinBtn.innerText);
 
     //   Container
     const container = getElement("container");
