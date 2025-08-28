@@ -67,10 +67,10 @@ getElement("cardMainBox").addEventListener("click", function (e) {
     newDiv.innerHTML = `
         
           <div
-              class="flex justify-between items-center bg-gray-100 p-4 rounded-lg m-4"
+              class="flex justify-between items-center bg-gray-100 p-3 rounded-lg m-3"
             >
               <div>
-                <h2>${title}</h2>
+                <h2 class="font-bold text-[15px]">${title}</h2>
                 <h3>${hotLine}</h3>
               </div>
               <div>
