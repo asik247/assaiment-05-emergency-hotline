@@ -1,37 +1,41 @@
 # Ans to the question no: 01.
 
-**নিচে getElementById, getElementsByClassName, querySelector, querySelectorAll এর পার্থক্য লিখা হলো:-**
+**Differences between getElementById, getElementsByClassName, querySelector, querySelectorAll**
 
-- getElementById হলো যা আইডি ‍দিয়ে একটি ইলিমেন্ট নেয়। এবং একটা ইলিমেন্টই রিটার্ন করে। সাধারনত document.getElementById("card") এভাবে লিখা হয়।
+- getElementById → Selects an element by its ID. It always returns a single element.
+  Example: document.getElementById("card")
 
-- getElementsByClassName হলো যা একই নামের ক্লাস দিয়ে ডিক্লার করা সবগুগুলো ইলিমেন্ট নিবে। যা HTMLCollection রিটার্ন করে। document.getElementsByClassName("card") এভাবে লিখা হয়ে থাকে।
+- getElementsByClassName → Selects all elements with the same class name. It returns an HTMLCollection.
+  Example: document.getElementsByClassName("card")
 
-- querySelector CSS selector এর মতো কাজ করে । এটি শুধু প্রথম মিলে যাওয়া element রিটার্ন করবে।
-  document.querySelector('.card'/'#card') এভাবে লিখা হয়।
-- querySelectorAll এটি সব matching element নিবে। এবং NodeList রিটার্ন করবে। document.querySelectorAll('.card'/'#card')
+- querySelector → Works like a CSS selector. It returns only the first matched element.
+  Example: document.querySelector('.card') or document.querySelector('#card')
+
+- querySelectorAll → Selects all matching elements. It returns a NodeList.
+  Example: document.querySelectorAll('.card') or document.querySelectorAll('#card')
 
 # Ans to the question no: 02.
 
-- নতুন element তৈরি করতে document.createElement ব্যবহার হয়। যেমন const newDiv = document.createElement("div") এখানে একটা নতুন ডিভ তৈরি করা হয়েছে । নতুন element insert করা
-  শেষে add বা শুরুতে add করতে পারি যেমন:-
+- document.createElement is used to create new elements. For example const newDiv = document.createElement("div") Here a new div is created. Insert new element
+  Add at the end or add at the beginning like:-
   newDiv.appendChild(newElement);
   newDiv.prepend(newElement);
 
 # Ans to the question no: 03.
 
-- Event Bubbling হল যখন কোনো child element এ event trigger হয়, তখন সেই event উপরের parent element-গুলোর দিকে ধরে উঠতে থাকে। ধরো তুমি <button> এ click করছো।
-  Click event প্রথমে button এ ঘটে।
-  তারপর একই event button-এর parent, parentএর parent … এ ক্রমান্বয়ে চলে।
+- Event bubbling is when an event is triggered on a child element, then that event is raised towards the parent elements above. Suppose you click on <button>.
+  The click event first occurs on the button.
+  Then the parent of the same event button, the parent of the parent … sequentially.
 
 # Ans to the question no: 04.
 
-- Event Delegation হলো parent element-এ একবার listener বসানো যাতে তার child elements এ যে কোনো event handle করা যায়। কম memory ব্যবহার হয়,ফলে performance ভালো হয়।
+- Event Delegation is placing a listener on the parent element so that any event can be handled on its child elements. Less memory is used, resulting in better performance.
 
 # Ans to the question no: 05.
 
-- preventDefault() হলো:-
-  কোন event এর default behaviour কে হতে দেয় না ।
-  page reload হলে, preventDefault() দিলে reload হয় না।
+- preventDefault() is:-
+  Does not allow the default behavior of any event.
+  When the page reloads, preventDefault() does not reload.
 
-- stopPropagation() হলো:-
-  event কে উপরের parent element-এ যাওয়ার (bubbling) থেকে রোধ করে। মানে যেখানে ‍stopPropagation() দেওয়া হবে তার উপরে আর bubbling করতে দিবে না। সেখানেই থেমে যাবে।
+- stopPropagation() is:-
+  Prevents the event from bubbling to the parent element above. Meaning no more bubbling above where stopPropagation() is called. It will stop there.
